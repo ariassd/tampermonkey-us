@@ -20,7 +20,7 @@ $( document ).ready(function() {
         $("span.docs-desc-comments").text("").append("<span class=\"la-helper\" style=\"color:red\">View C# docu</span>");
         $(".docs-collection-info").append("<button class=\"la-helper\">Run Helper</button>");
         //$(".div.docs-item").append("<button class=\"la-helper\">View C# documentation</button>");
-        $("body").append("<textarea class='la-output' style='width:100%;' rows='1000'></textarea>")
+        //$("body").append("<textarea class='la-output' style='width:100%;' rows='1000'></textarea>")
         $(".la-helper").on("click", function() {
             var whole_result = "";
             $(".pm-popover").remove();
@@ -55,7 +55,7 @@ $( document ).ready(function() {
             nModal.find(".la-close").on("click", function(){$("div.ReactModalPortal").text("")});
             $("div.ReactModalPortal").text("").append(nModal);
             //alert(whole_result.replace(/\n/g, "\n/// "));
-            $(".la-output").val(whole_result.replace(/\n/g, "\n/// "));
+            //$(".la-output").val(whole_result.replace(/\n/g, "\n/// "));
             $(".pm-popover").remove();
         });
     }, 2000);
