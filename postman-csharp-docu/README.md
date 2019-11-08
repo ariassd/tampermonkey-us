@@ -1,12 +1,26 @@
-# TUS Postman to CSharp documentation helper
-Tampermonkey user script Convert documentation from postman to c#
+# Postman to CSharp documentation helper
+### Description
+Tampermonkey user script converts documentation from postman to c# in a single click.
 
-### how to use
+### Dependencies
+- Tampermonkey for Google Chrome, Safari, Firefox.
+- jQuery CDN access.
+- Postman documentation page access
+
+### Installation
 - Install tampermonkey in Google Chrome (recomended)
 - Download this script and install it on tampermonkey
-- After script starts link "comments" will be replaced by a new link "View C# Docu" this links opens a modal with the comments.
+- Go to your documentation page in postman
+- After script starts the link "comments" will be replaced by a new link "View C# Docu" that opens a modal with the comments.
 
 
-### TODO
-- Add copy button
-- Minor fixes
+``` javascript
+
+(function(){
+    return {
+        "name": "Postman to CSharp documentation helper",
+        "by": "Luis Arias",
+        "at": 2019
+    }
+})()
+```
